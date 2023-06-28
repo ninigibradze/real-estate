@@ -45,7 +45,7 @@ const App = () => {
       <Header user={user} setUser={setUser} setShowLoginModal={setShowLoginModal} />
       {showLoginModal && (<LoginModal setLogIn={setLogIn} onLogin={handleLogin} onCloseModal={setShowLoginModal}  />)}
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/real-estate' element={<Home />} />
         <Route element={<ProtectedRoute user={user} />}> 
           <Route path='/property/:id' element={<PropertyDetails />} />
         </Route>
