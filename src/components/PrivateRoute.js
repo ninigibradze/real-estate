@@ -2,7 +2,7 @@ import { Navigate, Outlet } from "react-router-dom";
 
 const ProtectedRoute = ({user}) => {
     if(!user.isSignedIn) {
-        return <Navigate to='/' replace />
+        return <Navigate to='/real-estate' replace />
     }
     return <Outlet />
 }
