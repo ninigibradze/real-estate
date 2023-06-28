@@ -19,7 +19,7 @@ const Header = ({user, setUser, setShowLoginModal}) => {
     <header className='py-6 mb-12 border-b'>
       <div className='container mx-auto flex 
       justify-between items-center'>
-        <Link to='/'>
+        <Link to='/real-estate'>
           <img src={Logo} alt='logo' />
         </Link>
         <div className='flex items-center gap-4'>
